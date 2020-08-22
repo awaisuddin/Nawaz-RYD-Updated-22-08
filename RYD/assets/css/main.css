@@ -1,0 +1,835 @@
+
+/*              
+
+Designed by Mohammed Awaisuddin Nawaz Khan and Team at interning with RYD. 
+
+All the class names associated with 2 are for the waiting area page and rest has been named already
+
+ */	
+
+
+                                                                   /*                                              Global View */
+
+
+	   * {
+		  box-sizing: border-box;
+		  text-size-adjust: auto;
+		  }
+
+
+		.extra_space{
+		  background-color: #FFFFFF;
+		  position: relative;
+		  left: 100px;
+		  top: 300px;
+		  margin-top: 300px;
+		  width: 92%;		  
+		  border-radius: 8px;
+	
+		}
+
+
+		
+
+
+
+                                                                   /*                                               Mobile View */
+
+
+
+
+
+
+
+
+@media only screen and (max-device-width: 500px) {
+      /* For portrait layouts only */
+        * {box-sizing: border-box;
+		   align: center;
+		}
+		
+		
+/*              To stick Items to top */			
+		.sticktop{
+		  position: -webkit-sticky;
+		  position: sticky;
+		  top: 0px;
+		  
+		  z-index: 1;
+		}
+/*              Strat Game Button Bar */		
+		.play {
+		  background-color: #5E5BF5;
+		  position: relative;
+		  box-shadow: 0px 20px 10px 0px rgba(0, 0, 0, 0.05), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+		  height: 50px;
+		  width: 92%;		  
+		  border-radius: 8px;
+		  cursor: pointer;
+		  position: relative;
+		  top: -13px;
+		  font-size: 15px;
+		  margin-top: 25px;
+		  margin-left: 18px;
+		  text-align: center;
+		  
+		}
+		
+		
+/*              Strat Game Button Bar */			
+		.playbtn{
+		  position: relative;
+		  top: 14px;
+		  color: white;
+		  text-align: center;
+		}
+
+/*              For Navigation Bar */			
+		nav {
+		  background-color: #FFFFFF;
+		}
+		.mob_nav {
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+		  margin-top: -20px;
+		  margin-left: -15px;
+		  margin-right: -15px;
+		  border: none;
+		  background-color: #FFFFFF;
+		  font-size: 20px;
+		}
+
+			
+		.mob_nav2 {
+			position: relative;
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+		  margin-top: 20px;
+		  margin-left: -15px;
+		  margin-right: -15px;
+		  border: none;
+		  height: 200px;
+		  background-color: #FFFFFF;
+		  font-size: 20px;
+		  backgrount-width:110%;
+		  top: -15px;
+		  
+		  z-index: -1;
+		}
+
+/*              LOGO Bar */			
+		.logo {
+		  height: 50px;
+		}
+		.center {
+		  text-align: center;
+		}
+		i {
+		  padding: 6px 10px;
+		  border: none;
+		  cursor: pointer;
+		}
+/*              Search Bar */			
+		.search_bar {
+		  background-color: #FFFFFF;
+		  box-shadow: 0 0px 50px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+		  padding: 10px;
+		  margin-left: 25px;
+		  margin-right: 14px;
+		  margin-top: 10px;
+		  outline: none;
+		  color: #C3C3C3;		  
+		  border-radius: 8px;
+		  border: none;
+		}
+		
+		
+/*              Categories  */			
+		.categorytab {
+		  background-color: #FFFFFF;
+		  position: relative;
+		  left: 100px;
+		  box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.05), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+		  width: 92%;		  
+		  border-radius: 8px;
+		  
+		}
+/*              text-alignment in Waiting Area Section */			
+		.friends{
+			position: relative;
+		   margin-top: -285px;
+		}
+		
+		
+		.categorytab2 {
+		  background-color: #F59F39;
+		  position: relative;
+		  box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.05), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+		  height: 130px;
+		  width: 300px;		  
+		  border-radius: 8px;
+		  cursor: pointer;
+		  top: 10px;
+		  left: 17.5%;
+		  font-size: 15px;
+		  margin-bottom: 25px;
+		  
+		  z-index: 1;
+		}
+/*              for Waiting Area section */			
+		.roomp{
+			margin-left: 10px;
+			font-size: 17px;
+			font-weight: 400; 
+			color: #404040;
+		}
+/*              Search Bar */			
+		.searchbar {
+		  position: relative;
+		  background-color: #FFFFFF;
+		  border: none;
+		  
+		  outline: none;
+		  height: 35px;
+		  width: 80%;
+		  border-radius: 5px;
+		  top: -5px;
+		  margin-bottom: -15px;
+		  margin-left: 5px;
+		  font-size: 18px;
+		  color: black;
+		  }
+		
+		.searchicon {
+		  position: relative;
+		  top: -2px;
+		  text-align: left;
+		  height: 20px;
+		  width: 10%;
+		  margin-top: 10px;
+		  fill: grey;
+		}
+		
+		.left{
+		  text-align: left;
+		}
+/*              SVG ICONS */			
+		.puzzle {
+		  position: relative;
+		  top: 4px;
+		  height: 30px;
+		  width: 10%;
+		  fill: #328F81;
+		  margin-left: 7px;		  
+		}
+		
+		.binocular {
+		  position: relative;
+		  top: 4px;
+		  height: 30px;
+		  width: 10%;
+		  fill: #5E5BF5;
+		  margin-left: 7px;
+		}
+		
+		.ratings {
+		  position: relative;
+		  top: 4px;
+		  height: 30px;
+		  width: 10%;
+		  fill: #FCA14A;
+		  margin-left: 7px;
+		}
+		
+		.contacts {
+		  position: relative;
+		  top: 4px;
+		  height: 30px;
+		  width: 10%;
+		  fill: #F04D58;
+		  margin-left: 7px;
+		}
+		
+		
+
+		h2 {
+		  margin-bottom: -46px;
+		  margin-left: 36px;
+		  padding-bottom: 15px;
+		  font-size: 15px;
+		}
+		
+		.categorytext {
+		  position: relative;
+		  top: -5px;
+		  font-size: 15px;
+		  margin-left: 20px;
+		  text-decoration: none;
+		}
+		
+		.categorytab {
+		  cursor: pointer;
+		  position: relative;
+		  font-size: 15px;
+		  margin-left: 5px;
+		  top: 100px;
+		}
+		
+		
+		
+		
+		h2 { 
+		  font-family: 'Raleway', sans-serif;
+		  font-style: normal;
+		  font-variant: normal;
+		  font-weight: 600;
+		  line-height: 14px;
+		}
+		
+		a {
+		position: relative;
+		  font-family: 'Raleway', sans-serif;
+		  font-weight: 900;
+		  color: #000000;
+		  text-decoration: none;
+		
+		}
+		
+		input {
+		  font-family: 'Raleway', sans-serif;
+		  font-weight: 400;
+		
+		}
+		
+		svg {
+		  position: relative;
+		  top: 10px;
+		}
+/*              Strat Game Button Bar */			
+		.play {
+		   position: absolute;
+		   align: center;
+		   bottom: -20px;
+		}
+		
+		.play2 {
+		   background-color: #5E5BF5;
+		  position: relative;
+		  box-shadow: 0px 20px 10px 0px rgba(0, 0, 0, 0.05), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+		  height: 50px;
+		  width: 92%;		  
+		  border-radius: 8px;
+		  cursor: pointer;
+		  font-size: 15px;
+		  margin-top: 25px;
+		  margin-left: 18px;
+		  text-align: center;
+		   position: relative;
+		   top: -100px;
+		   bottom: -20px;
+		}
+
+/*              Stick to foot of the page */			
+		.foot2 {
+			position: relative;
+		   background-color:white;
+		   text-align: center;
+		   height: 60px;
+
+		}
+		
+		.yourgameid2 {
+			color: white;
+			text-align: center;
+			position: relative;
+			top: -20px;
+			margin-left: -10px;
+			font-size: 20px;
+			
+		}
+		
+		.idnumber2 {
+			color: white;
+			text-align: center;
+			position: relative;
+			top: -35px;
+			margin-left: -10px;
+			font-size: 40px;
+			
+		}
+		
+		.categoryname2 {
+			color: white;
+			text-align: center;
+			position: relative;
+			top: -15px;
+			margin-left: -10px;
+			font-size: 17px;
+			font-weight: 500;
+			
+		}
+		
+		.categoryname21 {
+			color: white;
+			text-align: center;
+			position: relative;
+			top: -40px;
+			margin-left: -10px;
+			font-size: 17px;
+			font-weight: 500;
+			
+		}
+		
+		
+	}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+                                                                   /*                                               Desktop View */		
+		
+		
+		
+		
+		
+		
+		
+				@media only screen and (min-device-width: 500px)  {
+      /* For portrait layouts only */
+    
+		* {box-sizing: border-box;
+		   align: center;
+		}
+		
+		
+		#myUL li {
+		  margin-top: 20px; /* Prevent double borders */
+		  margin-left: 120px; 
+		}
+		
+/*              Strat Game Button Bar */			
+		.play {
+		  background-color: #5E5BF5;
+		  position: relative;
+		  box-shadow: 0px 20px 10px 0px rgba(0, 0, 0, 0.05), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+		  height: 50px;
+		  width: 55%;		  
+		  border-radius: 8px;
+		  cursor: pointer;
+		  position: relative;
+		  top: -13px;
+		  font-size: 15px;
+		  margin-top: 25px;
+		  margin-left: 20px;
+		  text-align: center;
+		  
+		}
+		
+		
+/*              Strat Game Button Bar */			
+		.playbtn{
+		  position: relative;
+		  top: 14px;
+		  color: white;
+		  text-align: center;
+		}
+/*              Strat Game Button Bar */			
+		.playbtn:hover {
+		  position: relative;
+		  top: 14px;
+		  color: black;
+		  text-align: center;
+		}
+
+
+/*              Navigation Bar */			
+		nav {
+		  background-color: #FFFFFF;
+		}
+		.mob_nav {
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+		  margin-top: 0px;
+		  margin-left: -15px;
+		  margin-right: -15px;
+		  border: none;
+		  background-color: #FFFFFF;
+		  font-size: 20px;
+		  top: 0px;
+		  
+		  z-index: 1;
+		}
+		
+		.mob_nav2 {
+		  position: relative;
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+		  margin-top: 20px;
+		  margin-left: -15px;
+		  margin-right: -15px;
+		  border: none;
+		  height: 230px;
+		  background-color: #FFFFFF;
+		  font-size: 20px;
+		  top: -15px;
+		  
+		  z-index: -1;
+		}
+		
+/*             LOGO Bar */			
+		.logo {
+		  height: 50px;
+		  margin-left: 20px;
+		}
+		.center {
+		  text-align: left;
+		}
+		
+/*              SEARCH Bar */			
+		.search_bar {
+		float: right;
+		  background-color: #FFFFFF;
+		  box-shadow: 0 0px 50px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+		  padding: 1px;
+		  position: relative;
+		  top: -65px;
+		  width: 200px:;
+		  left: -200px;
+		  margin-top: 10px;
+		  outline: none;
+		  color: #C3C3C3;		  
+		  border-radius: 8px;
+		  border: none;
+		}
+		
+		.categorytab {
+		  background-color: #FFFFFF;
+		  position: relative;
+		  box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.05), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+		  height: 60px;
+		  width: 350px;		  
+		  border-radius: 8px;
+		  cursor: pointer;
+		  top: 120px;
+		  font-size: 15px;
+		}
+		
+		
+		
+		.categorytab:hover {
+		  background-color: white;
+		  position: relative;
+		  box-shadow: 1px 1px 5px 1px #5E5BF5, 1px 1px 5px 1px #5E5BF5, -1px 1px 5px 1px #5E5BF5;
+		  height: 60px;
+		  width: 350px;		  
+		  border-radius: 8px;
+		  cursor: pointer;
+		  top: 120px;
+		  font-size: 15px;
+		}
+		
+		.categorytab2 {
+		  background-color: #F59F39;
+		  position: relative;
+		  box-shadow: 0px 20px 10px 0px rgba(0, 0, 0, 0.05), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+		  height: 160px;
+		  width: 50%;		  
+		  border-radius: 8px;
+		  font-size: 15px;
+		  margin-top: 25px;
+		  margin-left: 18px;
+		  text-align: center;
+		   position: relative;
+		   bottom: -20px;
+		   margin-left:25%;
+		  
+		  z-index: 1;
+		}
+		
+		
+		.searchbar {
+		  position: absolute;
+		  background-color: #FFFFFF;
+		  border: none;
+		  outline: none;
+		  height: 35px;
+		  border-radius: 5px;
+		  top: 2px;
+		  margin-bottom: -15px;
+		  margin-left: 0px;
+		  font-size: 18px;
+		  color: black;
+		  }
+		
+		.searchicon {
+		  position: relative;
+		  background-color: transparent;
+		  float: left;
+		  top:12px;
+		  margin-left: 5px;
+		  text-align: left;
+		  height: 15px;
+		  width: 15px;
+		  fill: grey;
+		  z-index: 1;
+		}
+		
+		.left{
+		  text-align: left;
+		}
+
+/*              SVG Icons */			
+		.puzzle {
+		  position: relative;
+		  top: 4px;
+		  height: 50px;
+		  width: 65px;
+		  fill: #328F81;
+		  margin-left: 7px;		  
+		}
+		
+		.binocular {
+		  position: relative;
+		  top: 4px;
+		  height: 50px;
+		  width: 65px;
+		  fill: #5E5BF5;
+		  margin-left: 7px;
+		}
+		
+		.ratings {
+		  position: relative;
+		  top: 4px;
+		  height: 50px;
+		  width: 65px;
+		  fill: #FCA14A;
+		  margin-left: 7px;
+		}
+		
+		.contacts {
+		  position: relative;
+		  top: 4px;
+		  height: 50px;
+		  width: 65px;
+		  fill: #F04D58;
+		  margin-left: 7px;
+		}
+
+		h2 {
+		  margin-bottom: -46px;
+		  margin-left: 36px;
+		  margin-right: 100%;
+		  width: 300px;
+		  height: 100px;
+		  padding: 0px;
+		  font-size: 18px;
+		}
+		
+		.categorytext {
+		  position: relative;
+		  top: -15px;
+		  font-size: 15px;
+		  margin-left: 20px;
+		  text-decoration: none;
+		}
+		
+		
+		
+		
+		
+		.yourgameid2 {
+			color: white;
+			text-align: center;
+			position: relative;
+			top: 0px;
+			font-size: 30px;
+		  margin-left: 18px;
+		  text-align: center;
+		   position: relative;
+		   bottom: -20px;
+		   margin-left:0%;
+			
+		}
+		
+		.idnumber2 {
+			color: white;
+			text-align: center;
+			position: relative;
+			top: 70px;
+			font-size: 45px;
+		  margin-top: -70px;
+		  margin-left: 18px;
+		  text-align: center;
+		   position: relative;
+		   bottom: -20px;
+		   margin-left:0%;
+			
+		}
+		
+		.categoryname2 {
+			color: white;
+			text-align: center;
+			position: relative;
+			top: 0px;
+			margin-left: -10px;
+			font-size: 17px;
+			font-weight: 500;
+			
+		}
+		
+		.categoryname21 {
+			color: white;
+			text-align: center;
+			position: relative;
+			top: 70px;
+			margin-left: -10px;
+			font-size: 17px;
+			font-weight: 300;
+			
+		}
+		
+		
+		
+/*              Fonts For all */			
+		h2 { 
+		  font-family: 'Raleway', sans-serif;
+		  font-style: normal;
+		  font-variant: normal;
+		  font-weight: 800;
+		  line-height: 30px;
+		}
+		
+		a {
+		position: relative;
+		  font-family: 'Raleway', sans-serif;
+		  font-weight: 900;
+		  color: #000000;
+		  text-decoration: none;
+		
+		}
+		
+		input {
+		  font-family: 'Raleway', sans-serif;
+		  font-weight: 400;
+		
+		}
+
+/*              Js SVG file alignment */			
+		svg {
+		  position: relative;
+		  top: 10px;
+		  
+		  
+		  
+		}
+		
+/*              Strat Game Button Bar */	
+
+		.play {
+		   position: absolute;
+		   align: center;
+		   bottom: -20px;
+		   margin-left:25%;
+		}
+		
+		.play2 {
+		   background-color: #5E5BF5;
+		  position: relative;
+		  box-shadow: 0px 20px 10px 0px rgba(0, 0, 0, 0.05), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+		  height: 50px;
+		  width: 50%;		  
+		  border-radius: 8px;
+		  cursor: pointer;
+		  font-size: 15px;
+		  margin-top: 25px;
+		  margin-left: 18px;
+		  text-align: center;
+		   position: relative;
+		   align: center;
+		   bottom: -20px;
+		   margin-left:25%;
+		}
+		
+		.foot2 {
+			position: relative;
+		   background-color:white;
+		   align: center;
+		   height: 150px;
+
+		}
+		
+		.roomp{
+			top: 100px;
+			margin-left: 10px;
+			font-size: 17px;
+			font-weight: 400; 
+			color: #404040;
+		}
+		
+		
+		
+		
+}
+	
+
+/*             Global Section */	
+
+		section {
+		  position: relative;
+	  	  margin-top: 10px;
+		  margin-left: 20px;
+		}
+		nav {
+		  position: fixed;
+	      left: 0;
+	      top: 0;
+	      width: 100%;
+	      z-index:1;
+		
+		}
+		
+		.footer {
+		   position: fixed;
+		   left: 0;
+		   bottom: 0;
+		   width: 100%;
+		   text-align: center;
+		}
+
+		.foot {
+			position: relative;
+		   background-color:white;
+		   align: center;
+		   height: 80px;
+
+		}
+		
+/*              Waiting Area */			
+		.friends{
+			position: relative;
+		   top:75px;
+		}
+		
+		
+		
+
+/*              Category lists */			
+		ul { 
+		  list-style-type: none;
+		  margin-top: 200px;
+		}
+		
+/*              Orange Color shadow box */			
+		.color {
+		box-shadow: 1px 1px 5px 1px  orange, 1px 1px 5px 1px orange, -1px 1px 5px 1px orange;
+		 
+		}	
+		
+
+
